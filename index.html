@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Solicitud de Seguro</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Solicitud de Seguro</h1>
+        <form id="solicitud-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required><br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required><br>
+
+            <label for="tipoSeguro">Tipo de Seguro:</label>
+            <select id="tipoSeguro" required>
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="premium">Premium</option>
+            </select><br>
+
+            <div id="precioSeguro"></div>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+
+    <script src="JS/codigo.js"></script>
+</body>
+
+</html>
